@@ -211,7 +211,7 @@ const Home = () => {
 
         }}>         
                     <span className="char__container">
-                      <h2>{character} 1</h2>
+                      <h2>{character}</h2>
                     </span>
                 </div>
                 <div className={`${second} ${opacity ? "opacity": ""}`} onClick={wrongAnswer} style={{ 
