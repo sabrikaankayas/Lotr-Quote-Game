@@ -97,6 +97,15 @@
     border: 3px solid white;
     background-color: black;
 }
+.font {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    text-align: center;
+    color: white;
+    border: 3px solid white;
+    background-color: black;
+}
 .retry__container {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -199,6 +208,15 @@
         width: 100%;
         font-size: 1rem;
         padding: 0.3rem;
+        text-align: center;
+        color: white;
+        border: 3px solid white;
+        background-color: black;
+    }
+     .font {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0.2rem;
         text-align: center;
         color: white;
         border: 3px solid white;
