@@ -156,6 +156,7 @@ const Home = () => {
         setSecond("")
         setThird("")
         sortChars()
+        setFont(false)
     }
 
     const wrongAnswer = () => {
@@ -170,6 +171,7 @@ const Home = () => {
         setSecond("")
         setThird("")
         sortChars()
+        setFont(false)
         randomCharacters()
     }
 
