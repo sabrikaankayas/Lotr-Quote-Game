@@ -50,7 +50,7 @@ const Home = () => {
     const [third, setThird] = useState("")
     const [final, setFinal] = useState("")
     const [retry, setRetry] = useState(false)
-
+    const [font, setFont] = useState(false)
     
     const chars = [
     //Aragorn II Elessar
@@ -132,6 +132,9 @@ const Home = () => {
             setImg2(`url(/${chars[rdmFalseNum][1]}.jpg)`)
             setImg3(`url(/${chars[rdmFalseNum2][1]}.jpg)`)
 
+            if(chars[rdmNum][rdmQuote].length > 200) {
+            setFont(true)
+            }
         } else  {
             randomCharacters()
         }
@@ -240,7 +243,7 @@ const Home = () => {
             </div>
         </div>
         <div className="dialog__container">
-            <div className="border__container">
+            <div className={`${font ? "font" : "border__container"}`}>
             <h4>{quote}</h4>
             </div>
         {retry && <div className="retry__container" onClick={resetGame}>
